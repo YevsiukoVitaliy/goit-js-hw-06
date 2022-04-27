@@ -13,7 +13,8 @@ const images = [
   },
 ];
 const gallery = document.querySelector(".gallery")
-const galleryImg = images.map(elem => `<li><img class="img" src="${elem.url} alt="${elem.alt}" width="200" height="200"></li>`
+const galleryImg = images.map(elem => `<li><img class="img" src="
+${elem.url} alt="${elem.alt}" width="200" height="200"></li>`
 ).join("")
 gallery.style.display = "flex"
 gallery.insertAdjacentHTML("beforeend", galleryImg)
